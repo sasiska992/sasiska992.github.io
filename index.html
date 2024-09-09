@@ -1,3 +1,177 @@
-<a href="/">HI BRO</a>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        body {
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
 
+<ul>
+    <!--1-->
+    <li>
+        <a href="http://kubsu.ru">kubsu.ru</a>
+    </li>
+    <!--    2-->
+    <li>
+        <a href="https://kubsu.ru">https://kubsu.ru</a>
+    </li>
+    <!--    3-->
+    <li id="photo">
+        <a><img src="image.jpg" alt=""></a>
+    </li>
+    <!--    4-->
+    <li>
+        <a href="#">This page</a>
+    </li>
+
+    <!--    5-->
+    <li>
+        <a href="/">Main page</a>
+    </li>
+    <!--6-->
+    <li>
+        <a href="#photo">Go to photo</a>
+    </li>
+    <!--7-->
+    <li>
+        <a href="/uni=true?vlad=false?dima=joke">3 params link</a>
+    </li>
+    <!--    8-->
+    <li>
+        <a href="http://localhost?id=1">Id link</a>
+    </li>
+    <!--    9-->
+    <li>
+        <a href="second_index.html">Second index page</a>
+    </li>
+    <!--10-->
+    <li>
+        <a href="./about/about.html">About</a>
+    </li>
+    <!--    11-->
+    <li>
+        <a href="../">Up dir</a>
+    </li>
+    <!--    12-->
+    <li>
+        <a href=".././">Up-Up dir</a>
+    </li>
+    <!--    13-->
+    <li>
+        <h4>Here is a <a href="#">href</a> in text</h4>
+    </li>
+    <!--    14-->
+    <li>
+        <a href="https://example.com#example">Some content on site</a>
+    </li>
+    <!--    15-->
+    <li>
+        <img src="https://cdn.discordapp.com/attachments/1207416097700061187/1282602584154312776/photo.jpeg?ex=66dff43d&is=66dea2bd&hm=f5138d846a912ff97621198237250b5120ae539871391c170fbfe1cad72903cd"
+             usemap="#catmap" alt="Cat">
+
+        <map name="catmap">
+            <area shape="rect" coords="34,44,270,350" href="https://en.wikipedia.org/wiki/Cat" alt="More about cats">
+        </map>
+    </li>
+    <!--    16-->
+    <li>
+        <a href="">Nothing to go =(</a>
+    </li>
+    <!--    17-->
+    <li>
+        <a>Link without href</a>
+    </li>
+    <!--    18-->
+    <li>
+        <a href="#">No robots here (in page head)</a>
+    </li>
+    <!--    19-->
+    <li>
+        <a href="#">No robots here (in page head)</a>
+    </li>
+    <!--    20-->
+    <li>
+        <ol>
+            <li>
+                <a href="#" title="Link 1">Order Link 1</a>
+            </li>
+            <li>
+                <a href="#" title="Link 2">Order Link 2</a>
+            </li>
+            <li>
+                <a href="#" title="Link 3">Order Link 3</a>
+            </li>
+        </ol>
+    </li>
+    <li>
+        <a href="ftp://user:pass@https/dir/file">FTP link</a>
+    </li>
+</ul>
+<br>
+<br>
+<h4>FORM</h4>
+<form>
+    <label for="FIO">ФИО</label><br>
+    <input id="FIO" type="text" placeholder="Введите своё ФИО"><br>
+
+    <label for="tel">Телефон</label><br>
+    <input id="tel" type="tel" placeholder="+7 (999) 999-99-99"><br>
+
+    <label for="email">Email</label><br>
+    <input id="email" type="email" placeholder="example@example.example"><br>
+
+    <label for="birth_data">Дата рождения</label><br>
+    <input id="birth_data" type="date"><br>
+
+    <h4>Выберите пол</h4>
+    <dl>
+        <dt>
+            <input id="woman" type="radio" name="sex" value="female">
+            <label for="woman">Женский</label>
+        </dt>
+        <dd>Выберите женский пол.</dd>
+
+        <dt>
+            <input id="man" type="radio" name="sex" value="male">
+            <label for="man">Мужской</label>
+        </dt>
+        <dd>Выберите мужской пол.</dd>
+    </dl>
+
+
+    <label for="languages">Выберите язык программирования:</label>
+    <select id="languages" name="languages">
+        <option value="pascal">Pascal</option>
+        <option value="c">C</option>
+        <option value="cpp">C++</option>
+        <option value="javascript">JavaScript</option>
+        <option value="php">PHP</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="haskell">Haskell</option>
+        <option value="clojure">Clojure</option>
+        <option value="prolog">Prolog</option>
+        <option value="scala">Scala</option>
+    </select><br>
+
+    <label for="user_info">Биография</label><br>
+    <textarea id="user_info" rows="3"></textarea><br>
+
+    <input id="get_credit" type="checkbox">
+    <label for="get_credit">Оформить кредит</label><br>
+
+    <button type="submit">Сохранить</button>
+</form>
+
+
+</body>
+</html>
 
