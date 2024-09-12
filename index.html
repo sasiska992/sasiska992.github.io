@@ -17,11 +17,11 @@
 <ul>
     <!--1-->
     <li>
-        <a href="http://kubsu.ru">kubsu.ru</a>
+        <a href="http://kubsu.ru/">http link</a>
     </li>
     <!--    2-->
     <li>
-        <a href="https://kubsu.ru">https://kubsu.ru</a>
+        <a href="https://kubsu.ru">Https link</a>
     </li>
     <!--    3-->
     <li id="photo">
@@ -62,7 +62,7 @@
     </li>
     <!--    12-->
     <li>
-        <a href=".././">Up-Up dir</a>
+        <a href="../../">Up-Up dir</a>
     </li>
     <!--    13-->
     <li>
@@ -112,12 +112,13 @@
         </ol>
     </li>
     <li>
-        <a href="ftp://user:pass@https/dir/file">FTP link</a>
+        <a href="ftp://user:pass@url/dir/file">FTP link</a>
     </li>
 </ul>
 <br>
 <br>
-<h4>FORM</h4>
+<h5>FORM</h5>
+
 <form>
     <label for="FIO">ФИО</label><br>
     <input id="FIO" type="text" placeholder="Введите своё ФИО"><br>
@@ -147,26 +148,27 @@
     </dl>
 
 
-    <label for="languages">Выберите язык программирования:</label>
-    <select id="languages" name="languages">
-        <option value="pascal">Pascal</option>
-        <option value="c">C</option>
-        <option value="cpp">C++</option>
-        <option value="javascript">JavaScript</option>
-        <option value="php">PHP</option>
-        <option value="python">Python</option>
-        <option value="java">Java</option>
-        <option value="haskell">Haskell</option>
-        <option value="clojure">Clojure</option>
-        <option value="prolog">Prolog</option>
-        <option value="scala">Scala</option>
-    </select><br>
-
+    <label for="languages">Любимый ЯП</label>
+    <select id="languages" name="languages" multiple>
+        <option disabled value="" selected>Не выбрано</option>
+        <option value="Pascal">Pascal</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="PHP">PHP</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="Haskel">Haskel</option>
+        <option value="Clojure">Clojure</option>
+        <option value="Prolog">Prolog</option>
+        <option value="Scala">Scala</option>
+    </select>
+    <br>
     <label for="user_info">Биография</label><br>
     <textarea id="user_info" rows="3"></textarea><br>
 
     <input id="get_credit" type="checkbox">
-    <label for="get_credit">Оформить кредит</label><br>
+    <label for="get_credit">с контрактом ознакомлен (а)</label><br>
 
     <button type="submit">Сохранить</button>
 </form>
