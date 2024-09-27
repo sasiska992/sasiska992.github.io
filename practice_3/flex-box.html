@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>Flex Box</title>
+    <style>
+        #main-aside-wrapper {
+            flex-direction: row;
+            display: flex;
+        }
+
+        #main-aside-wrapper main, #main-aside-wrapper aside {
+            background-color: #ddd;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #main-aside-wrapper aside {
+            flex: 1;
+            order: 1;
+        }
+
+        #main-aside-wrapper main {
+            flex: 3;
+            order: 2;
+        }
+    </style>
+</head>
+
+
+<body>
+<div id="main-aside-wrapper">
+    <main>
+        <h1>Главный контент</h1>
+        <p>Вторая строка</p>
+    </main>
+    <aside>Сайдбар</aside>
+</div>
+</body>
+
+</html>
+<!--
+(c) Сергей Синица 2019
+Flex
+-->

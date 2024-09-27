@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>Адаптивная верстка Moble First</title>
+    <style>
+        #main-aside-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #main-aside-wrapper main,
+        #main-aside-wrapper aside {
+            background-color: #ddd;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #main-aside-wrapper aside {
+            flex: 1;
+            order: 1;
+        }
+
+        #main-aside-wrapper main {
+            flex: 3;
+            order: 2;
+        }
+
+        @media screen and (min-width: 800px) {
+            #main-aside-wrapper {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="main-aside-wrapper">
+        <main>
+            <h1>Главный контент</h1>
+            <p>Вторая строка</p>
+        </main>
+        <aside>Сайдбар</aside>
+    </div>
+</body>
+
+</html>

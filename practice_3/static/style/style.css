@@ -1,0 +1,136 @@
+.border {
+    width: 100%;
+    border-width: medium;
+    border-style: dashed;
+    border-color: green;
+}
+
+.logo {
+    margin: 20px;
+}
+
+.round {
+    border-radius: 100px; /* Радиус скругления */
+    border: 3px solid green; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+}
+
+.max_size {
+    max-width: 960px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    display: block;
+}
+
+
+.navbar {
+    background-color: #a4c8e1; /* Цвет фона */
+    padding: 15px;
+    align-items: center;
+    /*display: flex;*/
+    flex-direction: column;
+}
+
+.navbar.site-title, .navbar.menu {
+    margin: 10px;
+    padding: 10px;
+}
+
+.navbar.site-title {
+    flex: 1;
+    order: 1;
+}
+
+.navbar.menu {
+    flex: 1;
+    order: 2;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        flex-direction: row;
+        display: block;
+    }
+}
+
+.logo {
+    width: 100px; /* Ширина логотипа */
+    height: 100px; /* Высота логотипа */
+    border-radius: 50%; /* Округление */
+    background-color: #fff; /* Цвет фона логотипа */
+    margin-right: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    left: 56%;
+    top: 10px;
+    position: absolute;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #7da4b1; /* Цвет фона при наведении */
+}
+
+.site-title {
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 30px;
+    top: 7%;
+    left: 40%;
+    position: absolute;
+}
+
+@media screen and (min-width: 800px) {
+    .menu {
+        display: block;
+        position: revert;
+    }
+
+    .menu a{
+        display: block;
+    }
+
+    .site-title {
+        margin: 0;
+        padding: 0;
+        /*position: revert;*/
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(odd) {
+    background-color: #e6f7ff;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
