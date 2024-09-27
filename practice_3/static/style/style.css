@@ -50,13 +50,6 @@
     order: 2;
 }
 
-@media screen and (max-width: 800px) {
-    .navbar {
-        flex-direction: row;
-        display: block;
-    }
-}
-
 .logo {
     width: 100px; /* Ширина логотипа */
     height: 100px; /* Высота логотипа */
@@ -66,15 +59,18 @@
 }
 
 .menu {
-    display: flex;
+    display: block;
+    position: revert;
+    /*display: flex;*/
     flex-grow: 1;
     justify-content: space-around;
     left: 56%;
     top: 10px;
-    position: absolute;
+    /*position: absolute;*/
 }
 
 .menu a {
+    display: block;
     text-decoration: none;
     color: #000;
     padding: 10px 15px;
@@ -86,7 +82,9 @@
 }
 
 .site-title {
-    margin-left: 40px;
+    margin: 0;
+    padding: 0;
+    /*margin-left: 40px;*/
     font-weight: bold;
     font-size: 30px;
     top: 7%;
@@ -94,20 +92,15 @@
     position: absolute;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 801px) {
     .menu {
-        display: block;
-        position: revert;
-    }
-
-    .menu a{
-        display: block;
+        display: flex;
+        position: absolute;
     }
 
     .site-title {
-        margin: 0;
-        padding: 0;
-        /*position: revert;*/
+        justify-content: center;
+        position: absolute;
     }
 }
 
@@ -133,4 +126,23 @@ tr:nth-child(odd) {
 td, th {
     border: 1px solid #dddddd;
     padding: 8px;
+}
+
+@media screen and (min-width: 801px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links {
+        order: 1;
+    }
+
+    .table {
+        order: 2;
+    }
+
+    .form {
+        order: 3;
+    }
 }
