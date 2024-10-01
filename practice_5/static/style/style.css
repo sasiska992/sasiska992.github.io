@@ -1,0 +1,24 @@
+.max_size {
+    max-width: 960px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .new_content{
+        display: flex;
+        flex-direction: column;
+    }
+    .table{
+        order: 2;
+    }
+    .links{
+        order:1;
+    }
+    .form{
+        order: 3;
+    }
+
+}
+
