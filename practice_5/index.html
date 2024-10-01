@@ -39,14 +39,24 @@
     </nav>
     <hr>
 </header>
-
-<div class="max_size">
-    <div class="mb-3">
-        <form>
+<main>
+    <div class="max_size" id="main">
+        <div class="mb-3">
             <label for="count" class="form-label">Input count</label>
             <input type="text" id="count" class="form-control">
-        </form>
+        </div>
+        <div class="mb-3">
+            <select class="form-select" aria-label="Default select example" id="product">
+                <option selected>Open this select menu</option>
+                <option value="100">One</option>
+                <option value="200">Two</option>
+                <option value="300">Three</option>
+            </select>
+        </div>
+        <button id="submit" type="submit" class="btn btn-primary">Get result</button>
+        <br>
     </div>
-</div>
+</main>
 </body>
+<script src="javascript/calculate.js"></script>
 </html>
