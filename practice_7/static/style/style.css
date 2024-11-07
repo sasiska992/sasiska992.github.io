@@ -1,0 +1,15 @@
+.gallery {
+    width: 80%;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.pager {
+    text-align: center;
+    margin-top: 10px;
+}
