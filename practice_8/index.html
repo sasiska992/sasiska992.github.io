@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика 8</title>
+    <link rel="stylesheet" href="static/style/style.css">
+    <script defer src="javascript/script.js"></script>
+</head>
+
+<body>
+    <button id="openFormBtn">Открыть форму обратной связи</button>
+
+    <div id="feedbackPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closeFormBtn">&times;</span>
+            <h2>Обратная связь</h2>
+            <form id="feedbackForm">
+                <label for="fullName">ФИО:</label>
+                <input type="text" id="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="organization">Организация:</label>
+                <input type="text" id="organization">
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" required></textarea>
+
+                <label>
+                    <input type="checkbox" id="consent" required>
+                    Согласен с политикой обработки персональных данных
+                </label>
+
+                <button type="submit">Отправить</button>
+            </form>
+            <div id="responseMessage"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
